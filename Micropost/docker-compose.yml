@@ -1,0 +1,43 @@
+version: '2.4'
+
+volumes:
+  db_data:
+    driver: local
+  public:
+    driver: local
+
+services: # （１）
+  db:
+    image: mysql:8.2 # （２）
+    container_name: db
+    environment: # （６）
+      MYSQL_DATABASE: railstutorial_development
+      MYSQL_ROOT_USER: root
+      MYSQL_PASSWORD: Adsf4231!
+      MYSQL_ROOT_PASSWORD: Adsf4231!
+    volumes: # （４）
+      - db_data:/var/lib/mysql 
+    restart: always
+    ports:
+      - "3306:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "--silent"]
+      interval: 3s
+      retries: 10    
+  app:
+    container_name: app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes: # （４）
+      - .:/app
+    ports: # （７）
+      - "3000:3000"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: mysql2://root:Adsf4231!@db/railstutorial_development
+    links:
+      - "db"
+    command: bash -c "rails db:migrate && rails s -p 3000 -b '0.0.0.0'"

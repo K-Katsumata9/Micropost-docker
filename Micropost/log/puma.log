@@ -1,0 +1,82 @@
+=== puma startup: 2023-12-14 15:27:40 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+Exiting
+=== puma startup: 2023-12-14 15:29:51 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+Exiting
+=== puma startup: 2023-12-14 15:30:39 +0000 ===
+Started GET "/" for 192.168.65.1 at 2023-12-14 15:30:43 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 117.0ms | Allocations: 30422)
+  Rendered layouts/_header.html.erb (Duration: 1.1ms | Allocations: 554)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 213)
+  Rendered layout layouts/application.html.erb (Duration: 140.4ms | Allocations: 39421)
+Completed 200 OK in 152ms (Views: 143.8ms | ActiveRecord: 0.0ms | Allocations: 42701)
+
+
+Started GET "/" for 192.168.65.1 at 2023-12-14 15:34:39 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 729)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 172)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 8504)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 8883)
+
+
+Started GET "/" for 192.168.65.1 at 2023-12-14 15:35:24 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.4ms | Allocations: 724)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 172)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 8500)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 8826)
+
+
+Started GET "/" for 192.168.65.1 at 2023-12-14 15:35:26 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.9ms | Allocations: 724)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 172)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 8471)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 8841)
+
+
+Started GET "/" for 192.168.65.1 at 2023-12-14 15:35:38 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.2ms | Allocations: 724)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 172)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 8471)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 8841)
+
+
+Started GET "/" for 192.168.65.1 at 2023-12-14 15:35:40 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 724)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 172)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 8655)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 9026)
+
+
+- Gracefully stopping, waiting for requests to finish
+Exiting

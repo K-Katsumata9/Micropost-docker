@@ -1,0 +1,9 @@
+<% if @feed_items.any? %>
+  <ol class="microposts">
+    <%#以下3行と同じ @feed_itemsがmicropostクラスを持っているため(micropostのDBテーブル)micropostのパーシャルが使える render @feed_items %>
+		<% @feed_items.each do |micropost| %>
+			<%= render "microposts/micropost", micropost: micropost %>
+		<% end %>
+  </ol>
+  <%= will_paginate @feed_items %>
+<% end %>
