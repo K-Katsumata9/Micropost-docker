@@ -1,0 +1,7 @@
+I, [2023-12-14T15:22:39.985195 #11]  INFO -- : Refreshing Gem list
+I, [2023-12-14T15:22:41.157842 #11]  INFO -- : listening on addr=/app/unicorn.sock fd=9
+I, [2023-12-14T15:22:41.158147 #11]  INFO -- : listening on addr=0.0.0.0:8080 fd=10
+I, [2023-12-14T15:22:41.286088 #11]  INFO -- : master process ready
+I, [2023-12-14T15:22:41.286735 #14]  INFO -- : worker=0 ready
+I, [2023-12-14T15:22:41.287551 #15]  INFO -- : worker=1 ready
+I, [2023-12-14T15:22:41.288592 #16]  INFO -- : worker=2 ready

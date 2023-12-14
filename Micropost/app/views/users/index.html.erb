@@ -1,0 +1,13 @@
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<%= will_paginate @users %>
+
+<ul class="users">
+<%# <%= render @users これを使うとUserオブジェクトのリストと推測して下の3行も省略できる%>
+  <% @users.each do |user| %>
+    <%= render user %> <%# ←app/views/リソース名/_モデル名.html.erbが自動で呼び出される %%>
+  <% end %>
+</ul>
+
+<%= will_paginate @user%>
